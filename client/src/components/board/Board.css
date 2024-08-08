@@ -1,0 +1,58 @@
+table {
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+
+td {
+  border: 1px solid white;
+  text-align: center;
+  height: 30px;
+}
+
+tr {
+  color: white;
+}
+
+th,
+td {
+  width: calc(
+    100vw / 6
+  ); /* this is perfect for small board, for bigger need diff calc*/
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.suggested {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.perma-disabled {
+  pointer-events: none;
+}
+
+.red {
+  color: red !important;
+  pointer-events: none;
+}
+
+.no-event {
+  pointer-events: none;
+}
+
+.overwrite {
+  pointer-events: all !important;
+}
+
+.announced {
+  background-color: darkorange;
+}
+
+.announced::before {
+  content: "🔒";
+}
+.announced::after {
+  content: "🔒";
+}

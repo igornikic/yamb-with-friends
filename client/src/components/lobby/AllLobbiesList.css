@@ -1,0 +1,42 @@
+.lobby-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lobby {
+  border: 1px solid white;
+  text-align: center;
+  width: 40%;
+  margin: 8px;
+  padding: 8px;
+  border-bottom: 1px solid white;
+  align-self: baseline;
+}
+
+.users-list {
+  padding: 0 20px;
+  min-height: 72px;
+}
+
+.users-list b {
+  padding: 5px;
+}
+
+.lobby h3 {
+  position: relative;
+  border-bottom: 1px solid white;
+  margin: 0 -8px;
+  padding-bottom: 8px;
+  width: calc(100% + 16px);
+}
+
+.join-container {
+  border-top: 1px solid white;
+  margin: -8px;
+  width: calc(100% + 16px);
+}
+
+.lobby button {
+  margin: 1em;
+}

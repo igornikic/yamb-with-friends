@@ -1,0 +1,15 @@
+.create-user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../assets/dices-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.create-user-container button {
+  margin: 30px;
+}

@@ -1,0 +1,13 @@
+# Backend Node.js dependencies
+node_modules
+
+# Backend build file
+dist
+
+# Backend configuration file
+src/config/config.env
+
+# Logs and debugging files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

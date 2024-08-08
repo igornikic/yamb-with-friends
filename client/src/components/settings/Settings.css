@@ -1,0 +1,95 @@
+.settings {
+  color: black;
+}
+
+.settings .settings-button {
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  width: 48px;
+  height: 48px;
+  -webkit-tap-highlight-color: transparent;
+  transform-origin: center center;
+}
+
+.settings .settings-button:focus {
+  outline: none;
+}
+
+.settings .settings-button:hover {
+  transform: rotate(360deg);
+  transition: transform 0.7s;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 997;
+}
+
+.modal-content {
+  max-height: 50vh;
+  min-height: 30vh;
+  min-width: 60vw;
+  overflow-y: auto;
+  position: relative;
+  background: #fff;
+  margin: 10px;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: scaleAndFadeIn 0.3s ease-in-out;
+}
+
+.close-modal {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.3rem;
+  text-align: center;
+  z-index: 2;
+  color: #000;
+  background: rgba(0, 0, 0, 0.28);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.background-music {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+@keyframes scaleAndFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
